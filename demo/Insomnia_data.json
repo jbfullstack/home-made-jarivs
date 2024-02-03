@@ -1,0 +1,207 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-01-28T14:46:27.763Z",
+  "__export_source": "insomnia.desktop.app:v8.6.0",
+  "resources": [
+    {
+      "_id": "req_235e217e98d345e990518a13e81e627d",
+      "parentId": "fld_85435e38302141b3a5d45b0394e71fef",
+      "modified": 1706453147951,
+      "created": 1706453121590,
+      "url": "http://localhost:3000/ai-speaker/user/dev/sessions",
+      "name": "List USer Sessions",
+      "description": "",
+      "method": "GET",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/8.5.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1705246108886,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_85435e38302141b3a5d45b0394e71fef",
+      "parentId": "wrk_514d47ebb9ee4d02be94e3ea1a493b08",
+      "modified": 1706453121588,
+      "created": 1706453121588,
+      "name": "Speaker",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1705246100767,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_514d47ebb9ee4d02be94e3ea1a493b08",
+      "parentId": null,
+      "modified": 1706453121581,
+      "created": 1706453121581,
+      "name": "Jarvis Home Made",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_c0b265e048854b3586d45365748b2eec",
+      "parentId": "fld_85435e38302141b3a5d45b0394e71fef",
+      "modified": 1706453151399,
+      "created": 1706453121589,
+      "url": "http://localhost:3000/ai-speaker/start-session",
+      "name": "Start new Session",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"username\": \"jeremy\",\n\t\"sessionName\": \"serious-session\",\n\t\"personality\": \"Serious\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/8.5.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1705246108786,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_657b74d41f78461893475929bfbcec28",
+      "parentId": "fld_85435e38302141b3a5d45b0394e71fef",
+      "modified": 1706453156258,
+      "created": 1706453121589,
+      "url": "http://localhost:3000/ai-speaker/user/jeremy/text-chatting/e0d8e5b9-1c54-434d-86f0-f0063c62e5c5",
+      "name": "Text chatting with Speaker",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"message\": \"Hello ! What is the meaning of your name ?\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/8.5.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1705246108686,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3549c5e5f42e42e4900d9ddd5a33df66",
+      "parentId": "fld_85435e38302141b3a5d45b0394e71fef",
+      "modified": 1706453163050,
+      "created": 1706453121591,
+      "url": "http://localhost:3000/ai-speaker/user/jeremy/verbal-chatting/e0d8e5b9-1c54-434d-86f0-f0063c62e5c5",
+      "name": "Verbal chatting with Speaker",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"message\": \"Que \",\n\t\"voice\": \"onyx\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/8.5.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1704901587439,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_e5fceece6ed94f5d8c7a2a3f84cc03e6",
+      "parentId": "wrk_514d47ebb9ee4d02be94e3ea1a493b08",
+      "modified": 1706453121582,
+      "created": 1706453121582,
+      "name": "Base Environment",
+      "data": { "NEST_URL": "http://localhost:3000" },
+      "dataPropertyOrder": { "&": ["NEST_URL"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1705165236483,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_7c1eb1cda5f941bb97b63b070299a5b3",
+      "parentId": "wrk_514d47ebb9ee4d02be94e3ea1a493b08",
+      "modified": 1706453121583,
+      "created": 1706453121583,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "key": "__cf_bm",
+          "value": "Ba8UwU8oP5x8gp03Gkt0OJW4qaxeRqvMP00MHPditqM-1705768874-1-Ac4ACjsNxCkZ7DJ7Fyh9jbIZndnh8pVzv+Dbzg2N8fFISlCFOhxpfoFlToKcJPiSLhaL2lOuB8tPlC1iHOZlQFo=",
+          "expires": "2024-01-20T17:11:14.000Z",
+          "domain": "api.openai.com",
+          "path": "/",
+          "secure": true,
+          "httpOnly": true,
+          "hostOnly": false,
+          "creation": "2024-01-20T16:41:14.895Z",
+          "lastAccessed": "2024-01-20T16:41:14.895Z",
+          "sameSite": "none",
+          "id": "861c3c5b-f685-475e-bf03-364a77049746"
+        },
+        {
+          "key": "_cfuvid",
+          "value": "_bKjyf_eCmwTj3SXkEFfkV12wzWHWtIRa_wL6ZNHBW8-1705768874982-0-604800000",
+          "domain": "api.openai.com",
+          "path": "/",
+          "secure": true,
+          "httpOnly": true,
+          "hostOnly": false,
+          "creation": "2024-01-20T16:41:14.896Z",
+          "lastAccessed": "2024-01-20T16:41:14.896Z",
+          "sameSite": "none",
+          "id": "118f25c6-a402-4405-b20e-edb8160cc0dd"
+        }
+      ],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_413e7d6290d74562870304fdaa109616",
+      "parentId": "wrk_514d47ebb9ee4d02be94e3ea1a493b08",
+      "modified": 1706453121595,
+      "created": 1706453121584,
+      "fileName": "Jarvis Home Made",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
